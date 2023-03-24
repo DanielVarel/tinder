@@ -1,0 +1,2 @@
+en la parte de mostrar los perfiles, no logre que el dar click en cualquiera se mostraran los perfiles, pero dando
+un salto para le siguiente perfil ahi si que se muestra

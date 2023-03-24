@@ -1,0 +1,251 @@
+.nav-menu{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.opction-menu{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.usuario-selecionando{
+    padding-left:5px;
+    font-size: 30px;
+    color: #00ffff;
+}
+
+.opction-perfiles{
+    color: #cacaca;
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.opcion-favoritos{
+    font-size: 30px;
+    color: #cacaca;
+}
+
+
+/* para la seccion de los perfiles */
+.logo{
+    padding-top: 30px;
+    width: 200px;
+    margin: auto;
+}
+
+.perfiles img{
+    width: 200px;
+}
+
+.usuarios-utenticados{
+   background-color: #f3f3f3; 
+   border-radius: 10px;
+   text-align: center;
+}
+
+.usuarios-utenticados p{
+    font-size: 20px;
+    font-weight: 800;
+    color: #ff0000;
+
+ }
+
+.contenedor-usuarios{
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+
+.contenedor-usuario p{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-usuario{
+    width: auto;
+    text-align: center;
+    border-radius: 10px;
+}   
+
+.contenedor-usuarios img{
+    padding: 10px;
+    padding-bottom: 0;
+    width: 90px;
+}
+
+
+/* para los matches */
+.matches{
+    margin-top: 10px;
+    background-color: #f1f0f0da;
+    border-radius: 10px;
+}
+.matches .titulo{
+    text-align: center;
+    color: #ff0000;
+    font-size: 30px;
+}
+
+.match{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.match img{
+    width: 150px;
+    border-radius: 10px;
+}
+
+.nombre{
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #ff0000;
+}
+
+.edad{
+    color: #999797d3;
+}
+
+.ocupacion, .ciudad{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #999797d3;
+}
+
+.ciudad{
+    margin: 0;
+    padding: 0;
+}
+
+/* para la perte de los perfiles mostrados */
+
+.perfiles-de-interes{
+    display: flex;
+    height: 90vh;
+    color: #fff;
+}
+.perfil-mostrado{
+    padding-top: 10px;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.contenedor-infor-perfil{
+    width: 83%;
+    margin: 10px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #cacaca;
+}
+
+.corazon{
+    color: #00ffff;
+    height: 80px;
+    width: 80px;
+    background-color:#fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px -1px 51px -22px rgba(0,0,0,0.75);
+}
+
+.nombre-del-perfil{
+    font-size: 50px;
+    margin: 0;
+}
+
+.nombre-del-perfil span{
+    font-size: 30px;
+}
+
+.contenedor-de-portada{
+    height: 80vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: rgba(0,0,0, 0.12) 1px 1px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.check{
+    background-color: #1735de;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.nuevo-usuario{
+    margin: 5px;
+    padding: 0;
+    text-align: center;
+    color: #ff0000;
+}
+
+.contenedor-nuevo-usuario{
+    background-color: red;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+form {
+    width: 45%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: inherit;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}

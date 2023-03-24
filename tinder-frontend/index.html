@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/04db09d270.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Tinder</title>
+</head>
+<body>
+    <nav class="nav-menu">
+        <div class="usuario-selecionando" id="usuario-selecionando">
+            <i class="fa-solid fa-user"  onclick="mostrarPerfiles()"></i>
+        </div>
+
+        <div class="opction-menu">
+            <div class="opction-perfiles" id="opction-perfiles">
+                <i class="fa-solid fa-fire-flame-curved" onclick="mostrarPerfilesDeInteres()"></i>
+            </div>
+            <div class="opcion-favoritos" id="opcion-favoritos">
+                <i class="fa-solid fa-star" onclick="mostrarMatches()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- seccion de elecion de perfil -->
+    <div class="perfiles" id="perfiles" style="display: none;">
+        <div class="logo">
+            <img src="img/tinder-logo.png">
+        </div>
+        <p class="nuevo-usuario" id="nuevo-usuario" onclick="agregarNuevoUsuarios()">Nuevo usuario</p>
+        <div class="usuarios-utenticados">
+            <p>Usuario Autenticado</p>
+           
+            <div class="contenedor-usuarios" id="contenedor-usuarios">
+                <!-- <div class="contenedor-usuario">
+                    <img src="img/androide_16.jpg">
+                    <p>goku</p>
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+
+    <form class="contenedor-nuevo-usuario" id="contenedor-nuevo-usuario"  style="display: none;">
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+		
+        <label for="genero">Genero:</label>
+		<input type="text" id="genero" name="genero" placeholder="Escribe tu genero" required>
+		
+		<label for="edad">Edad:</label>
+		<input type="text" id="edad" name="edad" placeholder="Escribe tu edad" required>
+		
+        <label for="Ocupacion">Ocupacion:</label>
+		<input type="text" id="ocupacion" name="Ocupacion" placeholder="Escribe tu ocupacion" required>
+		
+		<label for="intereses">Intereses:</label>
+		<input type="text" id="intereses" name="intereses" placeholder="Escribe tu(s) intereses" required>
+		
+		<label for="ciudad">Ciudad:</label>
+		<input type="text" id="ciudad" name="ciudad" placeholder="Escribe tu ciudad" required>
+		
+		<label for="generoInteres">Generos de interes:</label>
+		<input type="text" id="generoInteres" name="generoInteres" placeholder="Escribe tu(s) generos de interes (pegados ejem. MF, Mo F) " required>
+		
+		<label for="imagenPerfil">Imagen perfil:</label>
+		<input type="text" id="imagenPerfil" name="imagenPerfil" placeholder="Escribe la url de tu imagen de perfil" required>
+		
+		<label for="imagenPortada">Imagen de portada:</label>
+		<input type="text" id="imagenPortada" name="imagenPortada" placeholder="Escribe la url de tu imagen de portada" required>
+			
+		<input type="submit" value="Enviar"  onclick="crearUsuario()">
+	</form>
+
+
+     <!-- seccion de perfiles de interes -->
+     <div class="perfiles-de-interes" id="perfiles-de-interes">
+        <div id="detalles-perefil">
+            
+        </div>
+            
+           <footer class="botones">
+                <div onclick="anteriorPerfil()" class="boton-atras"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="corazon"><i class="fa-solid fa-heart"></i></div>
+                <div onclick="siguinetePerfil()" class="boton-adelante"> <i class="fa-solid fa-chevron-right"></i></div>
+           </footer>
+    </div>
+
+
+    <!-- seccion para los matches -->
+    <div class="matches" id="matches" style="display: none;">
+        <p class="titulo">Matches</p>
+        <div class="contenedor-match" id="match">
+            
+            
+        </div>
+    </div>
+
+
+    
+    
+
+    <script src="js/codigo.js"></script>
+
+</body>
+</html>
